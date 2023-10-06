@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API to DOM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <button onclick="addNewData()" class="btn">Add New Data</button>
+
+    <div id="message"></div>
+    <div id="movementMessage"></div>
+    <div 
+        class="card" 
+        onmouseenter="showMessage()" 
+        onmouseleave="showLeaveMessage()" 
+        onmousemove="showMovementMessage()"
+        onmousewheel="showStopMessage()"
+    >
+        <h1 align="center">Person List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Location</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody id="personList">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
